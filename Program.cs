@@ -18,13 +18,15 @@ for (int i = 0; i <= array.Length - 1; i++)
 }
 
 PrintArray(array);
-Console.WriteLine();
+Console.Write("Массив до 3-х знаков: ");
 PrintArray(newArray);
 
 void PrintArray(string[] array)
 {
+    Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]},");
+        Console.Write($"“{array[i]}“,");
     }
+    Console.Write("]");
 }
